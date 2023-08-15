@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github User Search App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="container">
+      <nav>
+        <div class="logo">devfinder</div>
+        <div class="mode" id="dark-toggle-btn">
+          <p class="mode-text">dark</p>
+          <img class="mode-img" src="./images/icon-moon.svg" alt="Moon img" />
+        </div>
+      </nav>
+    </header>
+    <main class="container flex-container">
+      <form class="github-search">
+        <img
+          src="./images/icon-search.svg"
+          class="search-img"
+          alt="search icon"
+        />
+        <input
+          type="text"
+          id="search-user"
+          autocomplete="off"
+          placeholder="Search GitHub username..."
+        />
+        <input type="submit" id="submit" value="Search" />
+      </form>
+      <div class="github-profile">
+        <section class="profile">
+          <img
+            src="./images/Bitmap.png"
+            id="user-img"
+            class="user-img"
+            alt="Profile Image"
+          />
+          <p class="name" id="name">The Octocat</p>
+          <strong id="login" class="company">@octocat</strong>
+          <p class="join-date" id="join-date">Joined 25 jan 2011</p>
+        </section>
+        <section class="other-details">
+          <div class="bio" id="bio">
+            Lorem ipsum dolor sit Elmet congectetuer adipiscinq ell t. Donec
+            odio, Quisque volutpat mat tis eras,
+          </div>
+          <div class="repo-foll">
+            <div class="repo">
+              <p>Repos</p>
+              <strong id="total-repo">8</strong>
+            </div>
+            <div class="followers">
+              <p>Followers</p>
+              <strong id="total-followers">3938</strong>
+            </div>
+            <div class="following">
+              <p>Following</p>
+              <strong id="total-following">9</strong>
+            </div>
+          </div>
+        </section>
+        <section class="links">
+          <div class="location">
+            <i class="fa-solid fa-location-dot location-icon"></i>
+            <a href="" target="_blank" class="location-icon" id="address"></a>
+          </div>
+          <div class="twitter">
+            <i class="fa-brands fa-x-twitter twitter-icon"></i>
+            <a href="" target="_blank" class="twitter-icon" id="twitter"
+              >Not Available</a
+            >
+          </div>
+          <div class="website">
+            <i class="fa-solid fa-link website-icon"></i>
+            <a href="" target="_blank" class="website-icon" id="website"
+              >https://github.blog</a
+            >
+          </div>
+          <div class="business">
+            <i class="fa-solid fa-building business-icon"></i>
+            <a href="" target="_blank" class="business-icon" id="business"
+              >@github</a
+            >
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
